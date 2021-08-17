@@ -1,9 +1,9 @@
 import * as React from 'react'
 
-import { User } from '../interfaces'
+import { Recipe } from '../interfaces'
 
 type ListDetailProps = {
-  item: User
+  item: Recipe
 }
 
 const ListDetail = ({ item: user }: ListDetailProps) => (

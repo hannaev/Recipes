@@ -1,12 +1,12 @@
 import { GetStaticProps, GetStaticPaths } from 'next'
 
-import { User } from '../../interfaces'
+import { Recipe } from '../../interfaces'
 import { sampleUserData } from '../../utils/sample-data'
 import Layout from '../../components/Layout'
 import ListDetail from '../../components/ListDetail'
 
 type Props = {
-  item?: User
+  item?: Recipe
   errors?: string
 }
 

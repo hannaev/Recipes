@@ -1,18 +1,25 @@
 import React from 'react'
 import Link from 'next/link'
 
-import { User } from '../interfaces'
+import { Recipe } from '../interfaces'
 
 type Props = {
-  data: User
+  data: Recipe
 }
 
 const ListItem = ({ data }: Props) => (
-  <Link href="/users/[id]" as={`/users/${data.id}`}>
-    <a>
-      {data.id}: {data.name}
-    </a>
-  </Link>
+  <div>
+    <div className="flex">
+      <div className="flex-none md:flex-1 ...">
+        Responsive flex item
+      </div>
+    </div>
+    <Link href="/users/[id]" as={`/users/${data.id}`}>
+      <a>
+        {data.id}: {data.name}
+      </a>
+    </Link>
+  </div>
 )
 
 export default ListItem

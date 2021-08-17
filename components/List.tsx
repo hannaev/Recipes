@@ -1,19 +1,18 @@
 import * as React from 'react'
-import ListItem from './ListItem'
-import { User } from '../interfaces'
+
+import { Recipe } from '../interfaces'
 
 type Props = {
-  items: User[]
+  items: Recipe[]
 }
 
 const List = ({ items }: Props) => (
-  <ul>
+  <div className="grid grid-cols-3 gap-4">
     {items.map((item) => (
-      <li key={item.id}>
-        <ListItem data={item} />
-      </li>
+      <p>Testing {item.name}</p>
+
     ))}
-  </ul>
+  </div>
 )
 
 export default List
