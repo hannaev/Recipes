@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react'
 
-import Recipes from './Recipes'
+
 import Navbar from './Navbar'
 import Head from 'next/head'
 
@@ -18,10 +18,18 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
     </Head>
     <header>
       <Navbar />
-      <img src="https://cdn.zerocater.com/wp-content/uploads/2020/09/Cookbook-blog-header-1600x732-1.png" width="100%" />
+      <div className="grid md:grid-cols-2 py-6 my-6 px-6 mx-6 bg-purple-50">
+      <div>
+      <h1 className="text-indigo-500 text-3xl md:text-4xl font-mono font-bold mb-2">An awesome cookbook</h1>
+      <p>lorem ipsum blablblta rtrtkarjtlrjtkjartkrajt jrkjtkalrjtlr jaktjrljtr gfkgjkfjgk</p>
+      <button className="bg-indigo-400 text-white mr-2 py-2 px-6 rounded-full text-xl mt-6">Check recipes</button>
+      <button className="bg-transparent text-xl hover:bg-indigo-400 text-indigo-700 hover:text-white py-2 px-4 border border-indigo-400 hover:border-transparent rounded-full">Learn more</button>
+      </div>
+      <div>
+        <img src="https://i.pinimg.com/originals/67/69/98/676998a3f3b216ff67f21244a0cba8af.png" width="100%" />
+      </div>
+      </div>
     </header>
-    <Recipes />
-
     {children}
     <footer>
       <hr />
