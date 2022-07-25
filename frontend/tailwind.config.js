@@ -2,7 +2,7 @@ module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: { 
+    extend: {
             fontSize: {
                 '10xl': '8rem',
             },
@@ -22,6 +22,7 @@ module.exports = {
        crayola: '#EF6F6C',
       green: '#7FB685',
       darkGreen: '#a5a58d',
+      dark: '#3A3A3A',
      },
      secondary: {
 

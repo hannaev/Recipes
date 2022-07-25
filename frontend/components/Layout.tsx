@@ -17,17 +17,15 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
+    <div className="bg-primary-dark">
     <header>
       <Navbar />
-      <div className="bg-primary-white grid md:grid-cols-2 px-8 md:offset-1">
-      <div className="my-auto mx-auto">
-      <h1 style={{fontFamily: "'Comfortaa', cursive" }} className="py-3 colors-primary-green text-6xl  font-mono font-bold mb-2">Discover new recipes</h1>
-          <p className="py-4 text-xl">Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
-        <button className="bg-primary-darkGreen text-white mr-2 py-2 px-6 rounded-full text-xl mt-6">Check recipes</button>
-
+      <div className="grid md:grid-cols-2">
+      <div className="mx-auto my-auto pl-16 m-16">
+      <h1 style={{color: 'white'}} className="py-3 text-6xl  font-mono font-bold mb-2">Collection of recipes</h1>
       </div>
-      <div >
-        <Header style={{width: '100%'}}/>
+      <div className="py-16 m-16">
+      <img className="w-full" src="https://res.cloudinary.com/norgesgruppen/images/c_scale,dpr_auto,f_auto,q_auto:eco,w_1600/tulcxcntmwnys5ndgqvk/pasta-alfredo" alt=""/>
       </div>
       </div>
     </header>
@@ -36,7 +34,7 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
       <hr />
       <span>I'm here to stay (Footer)</span>
     </footer>
-    
+    </div>
   </>
 )
 
