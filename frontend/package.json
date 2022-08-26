@@ -16,7 +16,7 @@
     "express": "^4.17.3",
     "file-loader": "^6.2.0",
     "mongodb": "^4.5.0",
-    "mongoose": "^6.2.10",
+    "mongoose": "^6.4.6",
     "next": "latest",
     "nodemon": "^2.0.15",
     "react": "^17.0.1",
