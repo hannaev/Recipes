@@ -15,10 +15,10 @@ const Recipes = ({ items }: Props) => (
     <img className="w-full" src="https://res.cloudinary.com/norgesgruppen/images/c_scale,dpr_auto,f_auto,q_auto:eco,w_1600/tulcxcntmwnys5ndgqvk/pasta-alfredo" alt="Mountain"/>
     <div className="px-6 py-4">
       <h2 style={{color: 'white'}} className="font-bold text-xl mb-2">{item.name}</h2>
-      <p style={{color: 'white'}} className="text-base">
+      <span style={{color: 'white'}} className="text-base">
         {item.description}
         <Link href="/about">link</Link>
-      </p>
+      </span>
     </div>
     </div>
     </Link>

@@ -14,15 +14,15 @@ const WithStaticProps = ({ items }: Props) => (
   <Layout title="Users List | Next.js + TypeScript Example">
     <h1>Users List</h1>
     <p>
-      Example fetching data from inside <code>getStaticProps()</code>.
+      Example fetching data from inside .
     </p>
     <p>You are currently on: /recipes</p>
     <List items={items} />
-    <p>
+   
       <Link href="/">
-        <a>Go home</a>
+        Go home
       </Link>
-    </p>
+ 
   </Layout>
 )
 

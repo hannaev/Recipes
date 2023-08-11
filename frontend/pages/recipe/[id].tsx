@@ -14,9 +14,9 @@ const StaticPropsDetail = ({ item, errors }: Props) => {
   if (errors) {
     return (
       <Layout title="Error | Next.js + TypeScript Example">
-        <p>
+        <div>
           <span style={{ color: 'red' }}>Error:</span> {errors}
-        </p>
+        </div>
       </Layout>
     )
   }
