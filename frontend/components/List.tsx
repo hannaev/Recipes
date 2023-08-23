@@ -1,17 +1,17 @@
-import * as React from 'react'
+import * as React from "react";
 
-import { Recipe } from '../interfaces'
+import { Recipe } from "../interfaces";
 
-type Props = {
-  items: Recipe[]
+interface Props {
+  items: Recipe[];
 }
 
-const List = ({ items }: Props) => (
+const List = ({ items }: Props): JSX.Element => (
   <div className="grid grid-cols-3 gap-4">
-    {items.map((item) => (
-      <p>Testing {item.name}</p>
+    {items.map((item, index) => (
+      <p key={index}>Testing {item.name}</p>
     ))}
   </div>
-)
+);
 
-export default List
+export default List;

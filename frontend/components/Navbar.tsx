@@ -1,18 +1,16 @@
+import React from "react";
+import { Disclosure } from "@headlessui/react";
+import { MenuIcon, XIcon } from "@heroicons/react/outline";
 
-
-import { Disclosure } from '@headlessui/react'
-import { MenuIcon, XIcon } from '@heroicons/react/outline'
-
-import classNames from 'classnames';
+import classNames from "classnames";
 const navigation = [
-  { name: 'Dashboard', href: '#', current: true },
-  { name: 'Team', href: '#', current: false },
-  { name: 'Projects', href: '#', current: false },
-  { name: 'Calendar', href: '#', current: false },
-]
+  { name: "Dashboard", href: "#", current: true },
+  { name: "Team", href: "#", current: false },
+  { name: "Projects", href: "#", current: false },
+  { name: "Calendar", href: "#", current: false },
+];
 
-
-export default function Navbar() {
+export default function Navbar(): JSX.Element {
   return (
     <Disclosure as="nav">
       {({ open }) => (
@@ -20,13 +18,13 @@ export default function Navbar() {
           <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
             <div className="relative flex items-center justify-between h-16">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                {/* Mobile menu button*/}
+                {/* Mobile menu button */}
                 <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XIcon className="block h-6 w-6" />
                   ) : (
-                    <MenuIcon className="block h-6 w-6"/>
+                    <MenuIcon className="block h-6 w-6" />
                   )}
                 </Disclosure.Button>
               </div>
@@ -39,10 +37,12 @@ export default function Navbar() {
                   key={item.name}
                   href={item.href}
                   className={classNames(
-                    item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                    'block px-3 py-2 rounded-md text-base font-medium'
+                    item.current
+                      ? "bg-gray-900 text-white"
+                      : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                    "block px-3 py-2 rounded-md text-base font-medium"
                   )}
-                  aria-current={item.current ? 'page' : undefined}
+                  aria-current={item.current ? "page" : undefined}
                 >
                   {item.name}
                 </a>
@@ -52,5 +52,5 @@ export default function Navbar() {
         </>
       )}
     </Disclosure>
-  )
+  );
 }

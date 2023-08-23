@@ -1,25 +1,21 @@
-import React from 'react'
-import Link from 'next/link'
+import React from "react";
+import Link from "next/link";
 
-import { Recipe } from '../interfaces'
+import { Recipe } from "../interfaces";
 
-type Props = {
-  data: Recipe
+interface Props {
+  data: Recipe;
 }
-
-const ListItem = ({ data }: Props) => (
-  <div>
-    <div className="flex">
-      <div className="flex-none md:flex-1 ...">
-        Responsive flex item
+function ListItem({ data }: Props): JSX.Element {
+  return (
+    <div>
+      <div className="flex">
+        <div className="flex-none md:flex-1 ...">Responsive flex item</div>
       </div>
-    </div>
-    <Link href="/users/[id]" as={`/users/${data.id}`}>
- 
+      <Link href="/users/[id]" as={`/users/${data.id}`}>
         {data.id}: {data.name}
-   
-    </Link>
-  </div>
-)
-
-export default ListItem
+      </Link>
+    </div>
+  );
+}
+export default ListItem;
