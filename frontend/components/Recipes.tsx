@@ -17,7 +17,7 @@ const Recipes = ({ items }: Props) => (
       <h2 className="text-primary-indigo  font-bold text-4xl mb-2">{item.name}</h2>
       <span className="text-primary-purple">
         {item.description}
-        <Link href="/about">link</Link>
+      
       </span>
     </div>
     </div>
