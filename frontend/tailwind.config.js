@@ -18,12 +18,15 @@ module.exports = {
     colors: {
      // Configure your color palette here
      primary: {
-      white: '#fffdf6',
-       crayola: '#EF6F6C',
-      green: '#7FB685',
-      darkGreen: '#a5a58d',
-      dark: '#3A3A3A',
+      violet: "#493657",
+      pink: "#FF9B71",
+      celadon: "#BEE5BF",
+      honeydew: "#DFF3E3",
+      apricot: "#FFD1BA",
+      indigo: "#746DD9",
+      raspberry: "#D81E5B"
      },
+     
      secondary: {
 
      },
